@@ -48,7 +48,7 @@ Also you can download the pdf schematic from `\PDF_Schematic`
 
 The schematic follows the standard fixed-output buck topology per the LM2596 datasheet Figure 9-10:
 
->`Documentation/standard_application.png`
+![Datasheet Sch](Documentation/standard_application.png)
 ---
 
 ## PCB Design
