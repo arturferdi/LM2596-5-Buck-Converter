@@ -42,9 +42,9 @@ This module implements a **non-synchronous step-down DC-DC converter** using the
 
 ## Schematic
 
-> `Documentation/schematic.png`
+![Schematic](Documentation/schematic.png)
 
-Also you can download the pdf schematic from "PDF_Schematic"
+Also you can download the pdf schematic from `\PDF_Schematic`
 
 The schematic follows the standard fixed-output buck topology per the LM2596 datasheet Figure 9-10:
 
@@ -53,12 +53,12 @@ The schematic follows the standard fixed-output buck topology per the LM2596 dat
 
 ## PCB Design
 
-> `Documentation/pcb_design.png`
+![PCB Design](Documentation/pcb_design.png)
 
 **Design rules and layout notes:**
 
 - High-current paths (VIN → IC → L1 → VOUT and D1 freewheeling loop) use **wide copper pours** and are kept as short as possible to minimize parasitic inductance.
-- The **output switch pin (Pin 2)** copper area is minimized to reduce EMI radiation from the switching node.
+- The **output switch pin (Pin 1)** copper area is minimized to reduce EMI radiation from the switching node.
 - C_IN and C_OUT are placed as close as possible to the IC with short return paths to GND.
 - D1 (catch diode) is placed directly between Pin 2 (OUTPUT) and GND, adjacent to the IC.
 - Feedback trace (Pin 4) is routed away from the inductor to prevent flux-induced noise coupling.
@@ -72,7 +72,6 @@ The schematic follows the standard fixed-output buck topology per the LM2596 dat
 
 ## Board Dimensions
 
-> `Documentation/pcb_design.png`
 
 | Parameter | Value |
 |---|---|
@@ -84,7 +83,6 @@ The schematic follows the standard fixed-output buck topology per the LM2596 dat
 
 ## Bill of Materials (BOM)
 
-> `hardware/bom/LM2596-5_BOM.csv`
 
 | Ref | Description | Value / Part No. | Package | Qty |
 |---|---|---|---|---|
